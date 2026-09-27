@@ -3,6 +3,11 @@ Unit tests for iot_pipeline.transforms — run locally or in a Databricks notebo
 no live stream required.
 """
 
+import os
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
+
 import pytest
 from pyspark.sql import SparkSession
 from iot_pipeline.transforms import parse_and_window, detect_alerts
