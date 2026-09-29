@@ -8,9 +8,9 @@ GOLD_SCHEMA = "gold"
 
 BRONZE_TABLE = f"{CATALOG}.{BRONZE_SCHEMA}.iot_readings_raw"
 SILVER_TABLE = f"{CATALOG}.{SILVER_SCHEMA}.iot_reading_5min"
-GOLDE_TABLE =  f"{CATALOG}.{GOLD_SCHEMA}.iot_alerts"
+GOLD_TABLE =  f"{CATALOG}.{GOLD_SCHEMA}.iot_alerts"
 
-LANDING_PATH = "/Volumes/dev/bronze/raw_files"
+LANDING_PATH = "/Volumes/dev/bronze/iot_landing"
 CHECKPOINT_BASE = "/Volumes/dev/bronze/iot_checkpoints/"
 
 TEMP_ALERT_THRESHOLD = 30
